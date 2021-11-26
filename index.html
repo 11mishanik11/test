@@ -6,241 +6,733 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles.css">
-    <title>Konstruct</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/slyles.css">
+    <title>Web Development Project</title>
 </head>
 <body>
 
-    <svg style="display: none;">
+<svg style="display: none;">
 
-        <symbol id="facebook" viewBox="0 0 512 512">
-            <g>
-                <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
-            </g>
-        </symbol>
-    
-        <symbol id="twitter" viewBox="0 0 512 512">
-            <g>
-                <path d="M3.5,421.4c56,5.1,106.1-8.9,151.5-42.9c-7-1.6-13.4-1.6-19.5-3.1c-35.7-8.5-60.4-30-74.9-63.5   c-0.7-1.7-2.5-3.8-0.9-5.5c1.2-1.3,3.5-0.2,5.2,0c12.6,1.3,25.2,0.9,37.6-2c0.2-2.2-1.4-2-2.6-2.4c-30.7-8.2-53-26.5-67.4-54.8   c-6.6-13-10.2-26.6-10.6-41.2c-0.2-5.7,0.1-5.8,5.4-3.3c12.6,6,25.8,9.4,40.9,10.1c-6.9-5.6-13.1-10.5-18.4-16.4   c-16.1-17.9-25.1-38.8-27-62.9c-1.5-19.6,2.6-37.9,11.1-55.5c1.9-3.9,3.6-3.6,6-0.7C56.6,97.7,76.1,115,97.6,130   c16,11.2,33,20.5,50.9,28.4c23.6,10.3,48.1,17.2,73.5,21.3c8,1.3,16.2,1.6,24.3,2.4c4.1,0.4,5.2-0.8,4.4-5   c-4.1-21.6-1.3-42.6,8.1-62.3c16.1-33.6,43.1-54,79.8-59.4c32.6-4.8,61.9,4.5,86.2,27.4c3.7,3.5,7,4.4,12,3.1   c19.6-5,38.3-12.1,55.9-22.1c0.5-0.3,1.1-0.4,2.9-1.1c-8.2,24.1-22.7,41.9-43,55.5c4.7,0.9,18.6-1.6,28.2-4.6   c9.2-2.9,18.4-5.5,27.2-9.4c1.2,1.3,0.1,2-0.4,2.7c-11.7,16.5-25.1,31.4-41.1,43.8c-2.2,1.7-4.3,3.6-6.6,5.2   c-1.7,1.2-1.8,2.7-1.7,4.4c0.7,18.2-0.6,36.3-3.2,54.2c-2.7,18.3-7.3,36.1-13.4,53.6c-5,14.3-10.9,28.2-17.9,41.7   c-17.3,33.2-39.8,62.4-67.9,87.3c-29.9,26.4-63.9,45.4-101.9,57.2c-23.7,7.4-48,11.7-72.9,13c-19.2,1-38.3,0.7-57.3-1.7   c-27.2-3.3-53.4-10.7-78.6-21.5c-12.9-5.5-25.1-12.1-37.3-19C6.1,424.4,4.4,423.6,3.5,421.4z"/>
-            </g>
-        </symbol>
-    
-        <symbol id="linkedin" viewBox="0 0 455 455">
-            <g>
-                <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
-                <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
-                    M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
-                    c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
-                    c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
-                    c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                    z"/>
-            </g>
-        </symbol>
-    
-    </svg>	
+    <symbol id="smartphone" viewBox="0 0 512 512">
+        <g>
+            <path d="M386.13,402h-313V90.59A66.75,66.75,0,0,1,139.8,23.92H311a66.74,66.74,0,0,1,66.67,66.67v12.3a8.51,8.51,0,1,0,17,0V90.59A83.78,83.78,0,0,0,311,6.91H139.8A83.79,83.79,0,0,0,56.11,90.59V421.41a83.79,83.79,0,0,0,83.69,83.68H311a83.78,83.78,0,0,0,83.69-83.68v-11A8.5,8.5,0,0,0,386.13,402Zm-8.51,19.46A66.74,66.74,0,0,1,311,488.08H139.8a66.75,66.75,0,0,1-66.67-66.67V419H377.62Z"/><path d="M200,453.61h50.78a8.51,8.51,0,0,0,0-17H200a8.51,8.51,0,0,0,0,17Z"/><path d="M447.38,221.11H210.27a8.5,8.5,0,0,0-8.51,8.51v54.85l-99.55-99.56,99.55-99.56v54.86a8.51,8.51,0,0,0,8.51,8.51H447.38a8.51,8.51,0,0,0,0-17H218.78V64.81a8.5,8.5,0,0,0-14.52-6l-120,120a8.8,8.8,0,0,0,0,12.23l120,120a8.5,8.5,0,0,0,14.52-6V238.12h228.6a8.51,8.51,0,1,0,0-17Z"/><path d="M334.65,312.55H447.38a8.51,8.51,0,0,0,0-17H343.15v-31a8.5,8.5,0,0,0-14.52-6l-62.85,62.85a8.67,8.67,0,0,0,0,12.14l62.85,62.85a8.51,8.51,0,0,0,6,2.49,8.4,8.4,0,0,0,3.25-.64,8.49,8.49,0,0,0,5.25-7.86v-31H447.38a8.51,8.51,0,1,0,0-17H334.65a8.5,8.5,0,0,0-8.51,8.51v18.95l-42.37-42.37,42.37-42.37v19A8.5,8.5,0,0,0,334.65,312.55Z"/>
+        </g>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 512 512">
+        <g>
+            <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"/>
+        </g>
+    </symbol>
+
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M3.5,421.4c56,5.1,106.1-8.9,151.5-42.9c-7-1.6-13.4-1.6-19.5-3.1c-35.7-8.5-60.4-30-74.9-63.5   c-0.7-1.7-2.5-3.8-0.9-5.5c1.2-1.3,3.5-0.2,5.2,0c12.6,1.3,25.2,0.9,37.6-2c0.2-2.2-1.4-2-2.6-2.4c-30.7-8.2-53-26.5-67.4-54.8   c-6.6-13-10.2-26.6-10.6-41.2c-0.2-5.7,0.1-5.8,5.4-3.3c12.6,6,25.8,9.4,40.9,10.1c-6.9-5.6-13.1-10.5-18.4-16.4   c-16.1-17.9-25.1-38.8-27-62.9c-1.5-19.6,2.6-37.9,11.1-55.5c1.9-3.9,3.6-3.6,6-0.7C56.6,97.7,76.1,115,97.6,130   c16,11.2,33,20.5,50.9,28.4c23.6,10.3,48.1,17.2,73.5,21.3c8,1.3,16.2,1.6,24.3,2.4c4.1,0.4,5.2-0.8,4.4-5   c-4.1-21.6-1.3-42.6,8.1-62.3c16.1-33.6,43.1-54,79.8-59.4c32.6-4.8,61.9,4.5,86.2,27.4c3.7,3.5,7,4.4,12,3.1   c19.6-5,38.3-12.1,55.9-22.1c0.5-0.3,1.1-0.4,2.9-1.1c-8.2,24.1-22.7,41.9-43,55.5c4.7,0.9,18.6-1.6,28.2-4.6   c9.2-2.9,18.4-5.5,27.2-9.4c1.2,1.3,0.1,2-0.4,2.7c-11.7,16.5-25.1,31.4-41.1,43.8c-2.2,1.7-4.3,3.6-6.6,5.2   c-1.7,1.2-1.8,2.7-1.7,4.4c0.7,18.2-0.6,36.3-3.2,54.2c-2.7,18.3-7.3,36.1-13.4,53.6c-5,14.3-10.9,28.2-17.9,41.7   c-17.3,33.2-39.8,62.4-67.9,87.3c-29.9,26.4-63.9,45.4-101.9,57.2c-23.7,7.4-48,11.7-72.9,13c-19.2,1-38.3,0.7-57.3-1.7   c-27.2-3.3-53.4-10.7-78.6-21.5c-12.9-5.5-25.1-12.1-37.3-19C6.1,424.4,4.4,423.6,3.5,421.4z"/>
+        </g>
+    </symbol>
+
+    <symbol id="comments" viewBox="0 0 1792 1792">
+        <g>
+            <path d="M1408 768q0 139-94 257t-256.5 186.5-353.5 68.5q-86 0-176-16-124 88-278 128-36 9-86 16h-3q-11 0-20.5-8t-11.5-21q-1-3-1-6.5t.5-6.5 2-6l2.5-5 3.5-5.5 4-5 4.5-5 4-4.5q5-6 23-25t26-29.5 22.5-29 25-38.5 20.5-44q-124-72-195-177t-71-224q0-139 94-257t256.5-186.5 353.5-68.5 353.5 68.5 256.5 186.5 94 257zm384 256q0 120-71 224.5t-195 176.5q10 24 20.5 44t25 38.5 22.5 29 26 29.5 23 25q1 1 4 4.5t4.5 5 4 5 3.5 5.5l2.5 5 2 6 .5 6.5-1 6.5q-3 14-13 22t-22 7q-50-7-86-16-154-40-278-128-90 16-176 16-271 0-472-132 58 4 88 4 161 0 309-45t264-129q125-92 192-212t67-254q0-77-23-152 129 71 204 178t75 230z"/>
+        </g>
+    </symbol>
+
+    <symbol id="dribbble" viewBox="0 0 56.693 56.693">
+        <g>
+            <path clip-rule="evenodd" d="M52.43,24.152c-0.324-1.588-0.811-3.152-1.441-4.646  c-0.619-1.467-1.387-2.879-2.279-4.199c-0.885-1.309-1.9-2.539-3.018-3.656c-1.117-1.119-2.348-2.135-3.656-3.018  c-1.32-0.895-2.734-1.66-4.199-2.281c-1.494-0.629-3.057-1.117-4.646-1.439c-1.627-0.334-3.303-0.504-4.977-0.504  c-1.676,0-3.35,0.17-4.979,0.504c-1.588,0.322-3.152,0.811-4.645,1.439c-1.465,0.621-2.879,1.387-4.201,2.281  c-1.309,0.883-2.539,1.898-3.656,3.018c-1.118,1.117-2.132,2.348-3.016,3.656c-0.893,1.32-1.66,2.732-2.279,4.199  C4.805,21,4.32,22.564,3.995,24.152c-0.333,1.625-0.502,3.301-0.502,4.976c0,1.678,0.169,3.354,0.502,4.98  c0.325,1.588,0.811,3.152,1.442,4.645c0.619,1.465,1.387,2.881,2.279,4.201c0.884,1.309,1.898,2.537,3.016,3.656  c1.117,1.117,2.348,2.131,3.656,3.016c1.322,0.893,2.736,1.66,4.201,2.279c1.492,0.633,3.057,1.115,4.645,1.441  c1.629,0.336,3.303,0.504,4.979,0.504c1.674,0,3.35-0.168,4.977-0.504c1.59-0.326,3.152-0.809,4.646-1.441  c1.465-0.619,2.879-1.387,4.199-2.279c1.309-0.885,2.539-1.898,3.656-3.016c1.117-1.119,2.133-2.348,3.018-3.656  c0.893-1.32,1.66-2.736,2.279-4.201c0.631-1.492,1.117-3.057,1.441-4.645c0.334-1.627,0.502-3.303,0.502-4.98  C52.932,27.453,52.764,25.777,52.43,24.152z M49.316,28.919c-0.305-0.066-7.449-1.604-14.703-0.692  c-0.148-0.361-0.299-0.725-0.455-1.09c-0.439-1.033-0.912-2.057-1.404-3.062c8.338-3.402,11.723-8.297,11.762-8.355  C47.477,19.314,49.268,23.908,49.316,28.919z M42.156,13.285c-0.053,0.082-3.059,4.658-11.027,7.645  c-3.609-6.631-7.574-11.898-7.891-12.316c1.596-0.387,3.26-0.596,4.975-0.596C33.559,8.018,38.436,10.01,42.156,13.285z   M23.156,8.631c0,0.002-0.004,0.004-0.004,0.004s-0.023,0.006-0.062,0.014C23.111,8.643,23.135,8.639,23.156,8.631z M19.205,10.035  c0.281,0.377,4.186,5.67,7.84,12.164c-10.137,2.693-18.934,2.588-19.492,2.578C8.925,18.238,13.318,12.816,19.205,10.035z   M7.102,29.128c0-0.225,0.01-0.445,0.018-0.667c0.372,0.008,10.804,0.245,21.673-3.008c0.605,1.184,1.184,2.387,1.713,3.589  c-0.279,0.078-0.557,0.162-0.832,0.252c-11.393,3.682-17.172,13.934-17.172,13.934s0.008,0.006,0.008,0.01  C9.149,39.497,7.102,34.552,7.102,29.128z M28.213,50.241c-5.109,0-9.795-1.816-13.447-4.838c0.277,0.225,0.473,0.369,0.473,0.369  s4.047-8.826,16.566-13.188c0.047-0.018,0.094-0.031,0.141-0.045c2.971,7.719,4.197,14.184,4.51,16.029  C33.922,49.646,31.137,50.241,28.213,50.241z M40.01,46.64c-0.215-1.275-1.34-7.471-4.109-15.08  c6.814-1.09,12.721,0.779,13.156,0.922C48.117,38.364,44.75,43.438,40.01,46.64z" fill-rule="evenodd"/>
+        </g>
+    </symbol>
+
+    <symbol id="point" viewBox="0 0 12.7 12.7">
+        <g transform="translate(0,-284.29998)">
+            <path d="m 6.3500006,294.53054 c -4.2333338,-3.17502 -4.2333338,-8.46667 -3e-7,-8.46667 4.2333337,0 4.2333337,5.29165 3e-7,8.46667 z" style="fill:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/><circle cx="6.3499999" cy="288.88611" r="1.0583382" style="opacity:1;fill-opacity:1;stroke:none;stroke-width:0.70555556px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/>
+        </g>
+    </symbol>
+
+    <symbol id="telephone" viewBox="0 0 512 512">
+        <g>
+            <path d="M415.9,335.5c-14.6-15-56.1-43.1-83.3-43.1c-6.3,0-11.8,1.4-16.3,4.3c-13.3,8.5-23.9,15.1-29,15.1c-2.8,0-5.8-2.5-12.4-8.2  l-1.1-1c-18.3-15.9-22.2-20-29.3-27.4l-1.8-1.9c-1.3-1.3-2.4-2.5-3.5-3.6c-6.2-6.4-10.7-11-26.6-29l-0.7-0.8  c-7.6-8.6-12.6-14.2-12.9-18.3c-0.3-4,3.2-10.5,12.1-22.6c10.8-14.6,11.2-32.6,1.3-53.5c-7.9-16.5-20.8-32.3-32.2-46.2l-1-1.2  c-9.8-12-21.2-18-33.9-18c-14.1,0-25.8,7.6-32,11.6c-0.5,0.3-1,0.7-1.5,1c-13.9,8.8-24,20.9-27.8,33.2c-5.7,18.5-9.5,42.5,17.8,92.4  c23.6,43.2,45,72.2,79,107.1c32,32.8,46.2,43.4,78,66.4c35.4,25.6,69.4,40.3,93.2,40.3c22.1,0,39.5,0,64.3-29.9  C442.3,370.8,431.5,351.6,415.9,335.5z M404.4,391.4c-20,24.2-31.5,24.2-52.3,24.2c-20.3,0-51.8-14-84.2-37.3  c-31-22.4-44.8-32.7-75.9-64.6c-32.9-33.7-53.6-61.8-76.4-103.5c-24.1-44.1-21.4-63.4-16.5-79.3c2.6-8.5,10.4-17.6,21-24.2  c0.5-0.3,1-0.7,1.6-1c5.3-3.4,14.1-9.1,23.7-9.1c8,0,15.1,4,21.9,12.3l1,1.2c25.5,31.2,45.4,58.8,30.4,79.2  c-10.6,14.3-16.2,24-15.3,34c0.8,9.7,7.3,17,17.1,28l0.7,0.8c16.1,18.2,20.7,23,27.1,29.5c1.1,1.1,2.2,2.3,3.5,3.6l1.8,1.9  c7.4,7.7,11.5,11.9,30.3,28.4l1.1,1c8,7,13.9,12.1,22.5,12.1c8.9,0,18.7-5.6,37.3-17.5c1.9-1.2,4.6-1.9,8-1.9  c21.7,0,59.1,24.8,72.2,38.3C417,359.7,423,368.9,404.4,391.4z"/>
+        </g>
+    </symbol>
+
+    <symbol id="mail" viewBox="0 0 500 500">
+        <g>
+            <path d="M356.993,330.037h-214V170.483h214V330.037z M344.723,308.374V190.752l-56.385,56.481L344.723,308.374z M260.304,275.316    c-3.144,3.148-7.324,4.884-11.771,4.887c-0.005,0-0.01,0-0.015,0c-4.443,0-8.621-1.729-11.764-4.868l-15.81-15.783l-57.187,58.215    h172.937l-57.03-61.843L260.304,275.316z M248.518,267.933h0.003c1.171,0,2.272-0.457,3.099-1.286l83.75-83.894H161.383    l84.04,83.899C246.25,267.479,247.349,267.933,248.518,267.933z M155.263,193.982v114.92l56.995-58.02L155.263,193.982z"/>
+        </g>
+    </symbol>
+
+</svg>
 
 
-    <header class="header-bg">
+
+<header class="header" id="header">
+    <div class="container">
+
         <div class="header__inner">
-
-            <img class="header__logo" src="assets/img/logo-white.svg" alt="Logo Konstruct">
-
-            <div class="header__center">
-                <h1 class="header__title">PARTNER WITH KONSTUCT</h1>
-                <div class="header__subtitle">An award-winning construction management firm</div>
-            </div>
-
-            <a class="header__scroll" href="#!">SCROLL DOWN</a>
-
+            <div class="header__logo">Your Logo</div>
+            <nav class="nav">
+                <a class="nav__link" href="#!" data-scroll="#home">Home</a>
+                <a class="nav__link" href="#!" data-scroll="#about">About</a>
+                <a class="nav__link" href="#!" data-scroll="#services">Servicing</a>
+                <a class="nav__link" href="#!" data-scroll="#works">Portfolio</a>
+                <a class="nav__link" href="#!" data-scroll="#blog">Blog</a>
+                <a class="nav__link nav__link-last-child" href="#!" data-scroll="#contact">Contact us</a>
+                <div class="nav__searth">
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
         </div>
-    </header>
 
-    <div class="navbar">
-        <div class="container">
-            <div class="navbar__inner">
+    </div>
+</header>
 
-                <img class="navbar__logo" src="assets/img/logo-black.svg"></img>
-                <nav>
-                    <ul class="navbar__nav">
-                        <li>
-                            <a href="#!">HOME</a>
-                        </li>
-                        <li>
-                            <a href="#!">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#!">SERVICES</a>
-                        </li>
-                        <li>
-                            <a href="#!">WORK</a>
-                        </li>
-                        <li>
-                            <a href="#!">CONTACT</a>
-                        </li>
-                    </ul>
+<div class="page">
+    <main class="main">
+
+        <div class="intro" id="home">
+            <div class="intro__inner">
+                <div class="intro__title">Web development project</div>
+                <div class="intro__subtitle">Very suitable to support all web development projects</div>
+                <div class="intro__btn">
+                    <a class="btn btn-intro" href="#!" >OUR SERVICES</a>
+                    <a class="btn" href="#!">HIRE IS NOW</a>
+                </div>
+                
+            </div>
+            <div class="intro__arrow" data-scroll="#about">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                
+                <div class="section__header">
+                    <div class="section__title">About Us</div>
+                    <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+                </div>
+
+
+                <div class="about">
+                    <div class="about__item">
+                        <div class="about__icon">
+                            <img src="assets/img/about/about_1.png" alt="Awesome Icons">
+                        </div>
+                        <div class="about__title">Awesome Icons</div>
+                        <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                    </div>
+
+                    <div class="about__item">
+                        <div class="about__icon">
+                            <img src="assets/img/about/about_2.png" alt="Awesome Icons">
+                        </div>
+                        <div class="about__title">One Page</div>
+                        <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                    </div>
+
+                    <div class="about__item">
+                        <div class="about__icon">
+                            <img src="assets/img/about/about_3.png" alt="Awesome Icons">
+                        </div>
+                        <div class="about__title">Fully Responsive</div>
+                        <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+
+        <!-- Services -->
+        <section class="section services-top" id="services">
+            <div class="container">
+                
+                <div class="section__header">
+                    <div class="section__title">Our Services</div>
+                    <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+                </div>
+
+
+                <div class="services">
+                    <div class="services__item">
+                        <svg class="services__icon">
+                            <use href="#smartphone" />
+                        </svg>
+                        <div class="services__title">Research</div>
+                        <div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+                        <a href="#!" class="services-btn">READ MORE</a>
+                    </div>
+
+                    <div class="services__item">
+                        <svg class="services__icon">
+                            <use href="#smartphone" />
+                        </svg>
+                        <div class="services__title">Portfolio</div>
+                        <div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+                        <a href="#!" class="services-btn">READ MORE</a>
+                    </div>
+
+                    <div class="services__item">
+                        <svg class="services__icon">
+                            <use href="#smartphone" />
+                        </svg>
+                        <div class="services__title">Support</div>
+                        <div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+                        <a href="#!" class="services-btn">READ MORE</a>
+                    </div>
+
+                    <div class="services__item">
+                        <svg class="services__icon">
+                            <use href="#smartphone" />
+                        </svg>
+                        <div class="services__title">Documentation</div>
+                        <div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+                        <a href="#!" class="services-btn">READ MORE</a>
+                    </div>
+
+                    <div class="services__item">
+                        <svg class="services__icon">
+                            <use href="#smartphone" />
+                        </svg>
+                        <div class="services__title">Development</div>
+                        <div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+                        <a href="#!" class="services-btn">READ MORE</a>
+                    </div>
+
+                    <div class="services__item">
+                        <svg class="services__icon">
+                            <use href="#smartphone" />
+                        </svg>
+                        <div class="services__title">Design</div>
+                        <div class="services__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.</div>
+                        <a href="#!" class="services-btn">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Works -->
+        <section class="section" id="works">
+            <div class="container">
+                
+                <div class="section__header">
+                    <div class="section__title">Latest Works</div>
+                    <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+                </div>
+
+                <nav class="works__nav">
+                    <button class="work__nav-item" type="button">ALL</button>
+                    <button class="work__nav-item" type="button">WEB DESIGN</button>
+                    <button class="work__nav-item" type="button">UI/UX DESIGN</button>
+                    <button class="work__nav-item" type="button">MOCKUPS</button>
                 </nav>
 
-            </div> <!-- /.navbar__inner -->
-        </div> <!-- /.container -->
-    </div> 
+                <div class="works">
+                    <div class="work__item">
+                        <div class="work__item-photo">
+                            <img src="assets/img/works/work.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__name">Hand Watch</div>
+                            <div class="works__prof">ui/ux design</div>
+                        </div>
+                    </div>
 
+                    <div class="work__item">
+                        <div class="work__item-photo">
+                            <img src="assets/img/works/work_1.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__name">Hand Watch</div>
+                            <div class="works__prof">ui/ux design</div>
+                        </div>
+                    </div>
 
-    <!-- About -->
-    <section class="about">
-        <div class="container">
-            <h2 class="section__title">OUR STORY</h2>
+                    <div class="work__item">
+                        <div class="work__item-photo">
+                            <img src="assets/img/works/work_2.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__name">Hand Watch</div>
+                            <div class="works__prof">ui/ux design</div>
+                        </div>
+                    </div>
 
-            <div class="about__inner">
-                <div class="about__item about__item-info">
-                    <h3 class="about__title">Founded in 2011 by John Mathew Smith, <span>Konstruct</span> has become the number one construction management firm</h3>
+                    <div class="work__item">
+                        <div class="work__item-photo">
+                            <img src="assets/img/works/work_3.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__name">Hand Watch</div>
+                            <div class="works__prof">ui/ux design</div>
+                        </div>
+                    </div>
 
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    <div class="work__item">
+                        <div class="work__item-photo">
+                            <img src="assets/img/works/work_4.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__name">Hand Watch</div>
+                            <div class="works__prof">ui/ux design</div>
+                        </div>
+                    </div>
+
+                    <div class="work__item">
+                        <div class="work__item-photo">
+                            <img src="assets/img/works/work_5.jpg" alt="">
+                        </div>
+                        <div class="works__info">
+                            <div class="works__name">Hand Watch</div>
+                            <div class="works__prof">ui/ux design</div>
+                        </div>
+                    </div>
+
+                    <div class="works__btn">
+                        <a class="btn" href="#!">VIEW ALL</a>
+                    </div>
+
                 </div>
-                <div class="about__item about__item-cards">
-                    <div class="about__card">
-                        <img src="assets/img/plan.jpg" alt="we plan">
-                        <span>we <br> plan</span>
+
+            </div>
+        </section>
+
+
+        <!-- Rates -->
+        <section class="section">
+            <div class="container">
+
+
+
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="section">
+            <div class="container">
+
+                <div class="section__header">
+                    <div class="section__title">Our Team Member</div>
+                    <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+                </div>
+
+
+                <div class="team" data-slider>
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_1_.jpg" alt="John Doe">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">John Doe</div>
+                            <div class="team__prof">General Manager</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="about__card">
-                        <img src="assets/img/manage.jpg" alt="we plan">
-                        <span>we <br> manage</span>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_2.jpg" alt="Alexa Biru">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">Alexa Biru</div>
+                            <div class="team__prof">Office Director</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="about__card">
-                        <img src="assets/img/build.jpg" alt="we plan">
-                        <span>we <br> build</span>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_3.jpg" alt="Ronobir sing">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">Ronobir sing</div>
+                            <div class="team__prof">Admin</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_1_.jpg" alt="John Doe">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">John Doe</div>
+                            <div class="team__prof">General Manager</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_2.jpg" alt="Alexa Biru">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">Alexa Biru</div>
+                            <div class="team__prof">Office Director</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_3.jpg" alt="Ronobir sing">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">Ronobir sing</div>
+                            <div class="team__prof">Admin</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_1_.jpg" alt="John Doe">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">John Doe</div>
+                            <div class="team__prof">General Manager</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_2.jpg" alt="Alexa Biru">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">Alexa Biru</div>
+                            <div class="team__prof">Office Director</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="assets/img/team/team_3.jpg" alt="Ronobir sing">
+                        </div>
+                        <div class="team__info">
+                            <div class="team__name">Ronobir sing</div>
+                            <div class="team__prof">Admin</div>
+                            <div class="team__social">
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#facebook"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#twitter"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#comments"/>
+                                    </svg>
+                                </a>
+                                <a class="team__social-link" href="#!">
+                                    <svg>
+                                        <use href="#dribbble"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Blog -->
+        <section class="section" id="blog">
+            <div class="container">
+
+                <div class="section__header">
+                    <div class="section__title">Blog</div>
+                    <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
+                </div>
+
+
+                <div class="blog">
+                    <div class="blog__item">
+                        <a class="blog__photo" href="#!" >
+                            <img src="assets/img/blog/blog_1.jpg" alt="SEO Quis Vestibulum">
+                        </a>
+                        <div class="blog__info">
+                            <a class="blog__name" href="#!">SEO Quis Vestibulum</a>
+                            <span class="blog__date">14.0702017</span>
+                            <span class="blog__theme">Development</span>
+                            <p class="blog__desc">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                        </div>
+                    </div>
+
+                    <div class="blog__item">
+                        <div class="blog__info blog__info-left">
+                            <a class="blog__name" href="#!">SEO Quis Vestibulum</a>
+                            <span class="blog__date">14.0702017</span>
+                            <span class="blog__theme">Development</span>
+                            <p class="blog__desc">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                        </div>
+                        <a class="blog__photo" href="#!" >
+                            <img src="assets/img/blog/blog_2.jpg" alt="SEO Quis Vestibulum">
+                        </a>
+                    </div>
+
+                    <div class="blog__item">
+                        <a class="blog__photo" href="#!" >
+                            <img src="assets/img/blog/blog_3.jpg" alt="SEO Quis Vestibulum">
+                        </a>
+                        <div class="blog__info">
+                            <a class="blog__name" href="#!">SEO Quis Vestibulum</a>
+                            <span class="blog__date">14.0702017</span>
+                            <span class="blog__theme">Development</span>
+                            <p class="blog__desc">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                        </div>
+                    </div>
+
+                    <div class="blog__btn">
+                        <a class="btn" href="#!">More view</a>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+</div>
+
+<footer class="footer" id="contact">
+    <div class="container">
+
+        <div class="section__header header-footer">
+            <div class="section__title">Blog</div>
+            <div class="section__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
         </div>
-    </section>
 
-
-    <!-- Services -->
-    <section class="services">
-        <div class="container">
-
-            <div class="services__header">
-                <div class="section__title section__title-left">OUR CAPABILITIES</div>
-                <div class="services__header-right">
-                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam <br> nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</span>
-                    <button class="services__btn">ALL SERVICES</button>
-                </div>
-            </div>
-
-            <div class="services__cards">
-                <div class="services__card">
-                    <img src="assets/img/services-1.png" alt="">
-                    <div class="services__card-title">PROJECT AND CONSTRUCTION MANAGEMENT</div>
-                    <div class="services__card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
-                </div>
-                <div class="services__card">
-                    <img src="assets/img/services-2.png" alt="">
-                    <div class="services__card-title">STRUCTURE AUDIT AND MAINTENANCE</div>
-                    <div class="services__card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
-                </div>
-                <div class="services__card">
-                    <img src="assets/img/services-3.png" alt="">
-                    <div class="services__card-title">FACTORY CONSTRUCTION AND MODELING</div>
-                    <div class="services__card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Contact -->
-    <div class="contact contact-bg">
-        <div class="container">
-            <h2 class="contact__title">Want to build <br> something amazing?</h2>
-            <button class="contact__btn" type="button">GET IN TOUCH</button>
-        </div>
-    </div>
-
-
-    <!-- Signup -->
-    <div class="signup">
-        <h2 class="signup__title">Newsletter Signup</h2>
-        <form class="signup__form" action="/">
-            <input class="signup__input" placeholder="test@youremail.com" type="email" name="" id="">
-            <button class="signup__btn" type="button">SIGNUP</button>
-        </form>
-        
-    </div>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__col">
-                    <div class="footer__name">Company</div>
-                    <img class="footer__logo" src="assets/img/logo-white.svg" alt="Logo Konstruct" >
-                    <p class="footer__text" >Lorem ipsum dolor sit amet, consectetuer 
-                        adipiscing elit, sed diam nonummy nibh 
-                        euismod tincidunt ut laoreet dolore <br> magna aliquam erat.</p>
-                </div>
-                <div class="footer__col">
-                    <div class="footer__name">Links</div>
-                    <div class="links">
-                        <div class="links__item">
-                            <a href="#!">home</a>
-                            <a href="#!">about</a>
-                            <a href="#!">services</a>
-                            <a href="#!">projects</a>
-                            <a href="#!">contact us</a>
-                        </div>
-                        <div class="links__item">
-                            <a href="#!">FAQ</a>
-                            <a href="#!">TERMS</a>
-                            <a href="#!">CAREERS</a>
-                        </div>
-                        <div class="links__item">
-                            <a href="#!">BLOG</a>
-                            <a href="#!">PARTNERS</a>
-                            <a href="#!">NEWS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__col footer__col-contact">
-                    <div class="footer__name">Contact us</div>
-                    <address class="footer__adress">
-                        213 Baker Street <br>
-                        Oriel City Kounty <br>
-                        7000 KNW,<br>
-                        Kountry Name 
-                    </address>
-                    <a class="footer__contact" href="tel:+23 994 233 4022">+23 994 233 4022</a>
-                    <a class="footer__contact" href="mailto:info@konstruct.com">info@konstruct.com</a>
-                </div>
-                <div class="footer__col footer__col-social">
-                    <a class="social__link" href="#!">
-                        <svg class="circle">
-                            <use href="#facebook"/>
-                        </svg>
-                    </a>
-
-                    <a class="social__link" href="#!">
-                        <svg class="circle">
-                            <use href="#twitter"/>
-                        </svg>
-                    </a>
-                    
-                    <a class="social__link" href="#!">
+        <div class="footer__inner">
+            <div class="footer__contact">
+                <address class="footer__item">
+                    <div class="footer__icon">
                         <svg>
-                            <use href="#linkedin"/>
+                            <use href="#point"/>
                         </svg>
-                    </a>
+                    </div>
+                    <span>Nobinagar savar,Dhaka Bangladesh</span>
+                </address>
+                <div class="footer__item">
+                    <div class="footer__icon">
+                        <svg>
+                            <use href="#telephone"/>
+                        </svg>
+                    </div>
+                    <a href="tel:+8801743331996">+8801743331996</a>
+                    <a href="tel:+8801928737807">+8801928737807</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__icon footer__icon-mail">
+                        <svg>
+                            <use href="#mail"/>
+                        </svg>
+                    </div>
+                    <a href="mailto:quickmasud@gmail.com">quickmasud@gmail.com</a>
+                    <a href="mailto:quickmasud@yahoo.com">quickmasud@yahoo.com</a>
+                    
                 </div>
             </div>
+
+            <form class="footer__form" accept="/">
+                <input class="footer__input" type="text" placeholder="Your NAME" name="" id="">
+                <input class="footer__input" type="email" placeholder="Your Email" name="" id="">
+                <textarea class="footer__message" placeholder="Write Massage" name="" id=""></textarea>
+                <button class="footer__btn" type="submit">Send</button>
+            </form>
         </div>
 
-        <div class="copyright">
-            © 2017 Konstruct Inc. Designed by Jane Kathryn Teo
-        </div>
+    </div>
 
-    </footer>
-        
+    <div class="copyright">
+        All rights Reserved © 2017
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/slick.min.js"></script>
+
+<script src="assets/app.js"></script>
+
+
 </body>
 </html>
